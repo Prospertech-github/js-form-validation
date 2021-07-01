@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> JS PRACTICE </title>
+</head>
+<body>
+  <form action="">
+      <div class="form-container">
+        <label for="usernameInput"> Username </label>
+        <input type="text" name="userName" id="usernameInput" onblur="checkUserName()">
+        <p id="nameText"></p>
+        
+        <label for="emailInput"> Email </label>
+        <input type="email" name="userEmail" id="emailInput" onblur="checkEmail()">
+        <p id="emailText"></p>
+        
+        <label for="passwordInput"> Password </label>
+        <input type="password" name="userPassword" id="passwordInput" onblur="checkPassword()">
+        <p id="passwordText"></p>
+        
+        <label for="passwordConfirmInput"> Confirm Password </label>
+        <input type="password" name="passwordConfirm" id="passwordConfirmInput" onblur="confirmPassword()">
+        <p id="passwordConfirmText"></p>
+      </div>
+      <div class="btn-container">
+        <button type="submit"> SUBMIT </button>
+      </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
